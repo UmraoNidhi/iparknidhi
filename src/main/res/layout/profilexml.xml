@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="6dp">
+        <LinearLayout
+            android:id="@+id/Card"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp">
+
+            <TextView
+                android:fontFamily="@font/mulibold"
+                android:padding="10dp"
+                android:text="Choose image form"
+                android:id="@+id/Text_Cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+    <TextView
+        android:drawableLeft="@mipmap/gallery"
+        android:padding="10dp"
+        android:fontFamily="@font/mulibold"
+        android:text="  Gallery"
+        android:id="@+id/Text_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:drawableLeft="@mipmap/profile_camera"
+        android:fontFamily="@font/mulibold"
+        android:padding="10dp"
+        android:text="  Camera"
+        android:id="@+id/Text_TakePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

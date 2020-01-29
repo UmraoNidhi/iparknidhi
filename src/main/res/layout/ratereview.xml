@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/Linear_Main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Rating"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:fontFamily="@font/mulibold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_below="@id/Text_review"
+            android:orientation="horizontal"
+            android:id="@+id/Text3"
+            android:weightSum="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="60dp"
+                android:layout_height="60dp">
+
+                <ImageView
+                    android:id="@+id/Rating1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="60dp"
+                android:layout_height="60dp">
+            <ImageView
+                android:id="@+id/Rating2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="60dp"
+                android:layout_height="60dp">
+            <ImageView
+                android:id="@+id/Rating3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="60dp"
+                android:layout_height="60dp">
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/Rating4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="60dp"
+                android:layout_height="60dp">
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/Rating5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"  />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/Linear_edit"
+            android:layout_below="@id/Text3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shapereport"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <EditText
+                android:id="@+id/Edit_review"
+                android:hint="Type here"
+                android:gravity="left"
+                android:background="@null"
+                android:textSize="14sp"
+                android:fontFamily="@font/mulilight"
+                android:layout_marginStart="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp" />
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_below="@id/Linear_edit"
+            android:id="@+id/Login_frame"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/shapelogout">
+            <ImageView
+                android:layout_below="@id/Linear"
+                android:id="@+id/shine_img1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/button_animation"/>
+
+            <Button
+                android:id="@+id/Button_submit"
+                android:background="@drawable/shapelogout"
+                android:text="Submit"
+                android:textColor="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

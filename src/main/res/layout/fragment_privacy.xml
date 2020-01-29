@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglight"
+    tools:context=".Fragment.PrivacyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/Relative_privacy"
+        android:layout_margin="10dp"
+        android:background="@drawable/privacy_policy"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <TextView
+            android:gravity="right"
+            android:layout_alignParentBottom="true"
+            android:text="Privacy Policy"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="26sp"
+            android:layout_marginRight="10dp"
+            android:breakStrategy="simple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/Relative_privacy"
+        android:id="@+id/Recycler_privacy"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Wems-User</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_home">Wems RSA</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="skip"> Skip </string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="anytime">Any Place Any Time</string>
+    <string name="anywhere">Wems Roadside Assistance Application connecting you with service providers in quick turn around time.
+</string>
+    <string name="Quick">Quick Available Roadside Assistance</string>
+    <string name="free">Flat tyre, dead battery or immobilized vehicle, whatever may be the problem, we help you get back on the road by connecting you with reliable roadside assistance at the touch of your phone.</string>
+    <string name="location">It connects you to roadside assistance providers, within a 5 Kilometers radius or more of your location.</string>
+    <string name="SignIn">  Not a member yet? Join Now </string>
+    <string name="full_name">Full Name * </string>
+    <string name="email">Email Address *</string>
+    <string name="phone_no">Phone No/Email *</string>
+    <string name="phone_User">Phone No *</string>
+    <string name="password">Password *</string>
+    <string name="confirm_password">Confirm Password *</string>
+    <string name="with_you">We Are With You On Every Road</string>
+    <string name="are_you_sure_you_want_to_logout_wemsrsa">Are you sure you want to logout?</string>
+    <string name="services_provided_by_us"> RSA Providers </string>
+    <string name="Subscription">Your free Subscription has  expired to continue "\n"with WEMS RSA buy new subscription.</string>
+    <string name="hint">Why do you want to contact us?</string>
+</resources>

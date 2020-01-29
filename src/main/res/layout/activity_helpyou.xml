@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorSky"
+    android:layout_height="match_parent"
+    tools:context=".Activity.HelpyouActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/Toolbar_help"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:weightSum="2"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/Image_help"
+                android:layout_gravity="center"
+                android:src="@drawable/backwhitenew"
+                android:layout_width="30dp"
+                android:padding="5dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:fontFamily="@font/mulibold"
+                android:layout_gravity="center"
+                android:layout_weight="2.9"
+                android:textStyle="bold"
+                android:text="Wems RSA"
+                android:gravity="left"
+                android:textSize="20sp"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_below="@id/Toolbar_help"
+        android:id="@+id/Linear_Help"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/Image_roadside"
+            android:layout_below="@id/Toolbar_help"
+            android:layout_width="match_parent"
+            android:src="@drawable/addbanner"
+            android:scaleType="fitXY"
+            android:layout_height="170dp" />
+        <TextView
+            android:background="@color/colorYellow"
+            android:layout_below="@id/Image_roadside"
+            android:id="@+id/Text_carNo"
+            android:text="Welcome "
+            android:fontFamily="@font/mulilight"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <TextView
+            android:layout_below="@id/Text_carNo"
+            android:id="@+id/TextView_Help"
+            android:background="@color/colorSky"
+            android:text="How can we connect you?"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/mulibold"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/Linear_Help"
+        android:id="@+id/Recycler_help"
+        android:layout_above="@id/image_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+    <FrameLayout
+        android:id="@+id/Frame_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.github.ybq.android.spinkit.SpinKitView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.Circle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:SpinKit_Color="@color/colorAccent" />
+    </FrameLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/Linear_Network"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@drawable/sad"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:textColor="@color/colorBlack"
+            android:text="Please Check Your Network Connection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_banner"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/linebanner"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:clickable="true"
+        android:scaleType="fitXY"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/Button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="text" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorSky"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AddVehicleActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/Toolbar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:weightSum="3"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/Image_back"
+                android:layout_gravity="center"
+                android:src="@drawable/backwhitenew"
+                android:layout_width="30dp"
+                android:visibility="gone"
+                android:padding="5dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="2.9"
+                android:text="Add Your Vehicle"
+                android:gravity="left"
+                android:layout_marginStart="20dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/mulibold"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:visibility="gone"
+                android:layout_marginRight="10dp"
+                android:layout_width="40dp"
+                android:padding="5dp"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/Linear_spinner"
+        android:layout_below="@id/Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="2dp">
+    <Spinner
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:id="@+id/Spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/Linear_spinner2"
+        android:layout_below="@id/Linear_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="6dp">
+    <Spinner
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:id="@+id/Spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.RecyclerView
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/Toolbar"
+        android:id="@+id/RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/Card"
+        android:background="@color/colorWhite"
+        android:layout_below="@id/Linear_spinner2"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="60dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="4dp">
+        <Spinner
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/Spinner_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+    </android.support.v7.widget.CardView>
+
+
+    <FrameLayout
+        android:id="@+id/Login_frame"
+        android:layout_below="@id/Card"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="right"
+        android:layout_weight="1"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/shapelogout">
+        <ImageView
+            android:id="@+id/shine_img1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/button_animation"/>
+
+        <Button
+            android:id="@+id/Button_Add"
+            android:background="@null"
+            android:text="Review"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/mulibold"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/Image_background"
+        android:layout_below="@id/Login_frame"
+        android:layout_width="match_parent"
+        android:src="@drawable/addback"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

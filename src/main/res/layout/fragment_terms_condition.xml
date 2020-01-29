@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/bglight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.TermsConditionFragment">
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:src="@drawable/terms"
+            android:padding="3dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/Text_updated"
+            android:layout_gravity="center"
+            android:background="@color/colorYellow"
+            android:text="Last Updated: July 2019"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <WebView
+        android:id="@+id/Web_TC"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="gravity">
+
+    </WebView>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/Recycler_term"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <!--<LinearLayout-->
+        <!--android:layout_marginStart="10dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<ImageView-->
+            <!--android:background="@color/colorYellow"-->
+            <!--android:layout_width="2dp"-->
+            <!--android:layout_height="match_parent" />-->
+        <!--<TextView-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginStart="5dp"-->
+            <!--android:padding="2dp"-->
+            <!--android:text="All you do is answer a few simple questions about your business and your website privacy policy is created and ready to add to your site. In fact, for most people it takes less than 15 minutes."-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+        <!--android:layout_marginStart="10dp"-->
+        <!--android:id="@+id/Linear_view"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<ImageView-->
+            <!--android:src="@drawable/list"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:padding="5dp"-->
+            <!--android:layout_height="40dp" />-->
+
+
+    <!--</LinearLayout>-->
+
+
+
+
+    <!--&lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+
+</LinearLayout>

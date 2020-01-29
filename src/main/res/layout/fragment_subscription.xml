@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglight"
+    tools:context=".Fragment.SubscriptionFragment">
+
+    <TextView
+        android:id="@+id/TextView"
+        android:text="Premium"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textColor="@color/ColorRed"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/TextView"
+        android:id="@+id/Recycler_subcription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <!--<TextView-->
+        <!--android:layout_below="@id/Recycler_subcription"-->
+        <!--android:id="@+id/TextView1"-->
+        <!--android:text="Basic"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="@color/colorBlack"-->
+        <!--android:textSize="20dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:layout_below="@id/TextView1"-->
+        <!--android:id="@+id/Recycler_Basic"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+    <!--</android.support.v7.widget.RecyclerView>-->
+
+
+</RelativeLayout>

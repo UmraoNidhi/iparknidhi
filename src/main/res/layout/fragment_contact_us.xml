@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bglight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ContactUsFragment">
+
+    <LinearLayout
+        android:id="@+id/Linear_image"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:gravity="center"
+            android:src="@drawable/contact"
+            android:id="@+id/TextView"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+        <!-- TODO: Update blank fragment layout -->
+
+
+        <LinearLayout
+            android:id="@+id/Linear_main"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <android.support.v7.widget.CardView
+                android:background="@color/colorSky"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="6dp">
+                <EditText
+                    android:id="@+id/Edit_subject"
+                    android:background="@null"
+                    android:hint="Enter subject"
+                    android:fontFamily="@font/mulilight"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <Spinner
+                    android:visibility="gone"
+                    android:id="@+id/Spinner"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+            </android.support.v7.widget.CardView>
+
+            <EditText
+                android:gravity="left"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/mulilight"
+                android:hint="Why do you want to contact us?"
+                android:id="@+id/Edit_Text"
+                android:background="@drawable/shapereport"
+                android:padding="3dp"
+                android:layout_marginStart="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+            <FrameLayout
+                android:id="@+id/Login_frame"
+                android:layout_below="@id/Linear_forget"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="right"
+                android:layout_marginBottom="40dp"
+                android:layout_weight="1"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/shapelogout">
+                <ImageView
+                    android:id="@+id/shine_img1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_animation"/>
+
+                <Button
+                    android:id="@+id/Button_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Linear_forget"
+                    android:layout_gravity="center"
+                    android:text="Submit"
+                    android:textColor="@color/colorWhite"
+                    android:background="@null"/>
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+    <ImageView
+        android:id="@+id/image_banner"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/linebanner"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:clickable="true"
+        android:scaleType="fitXY"/>
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:id="@+id/Progress"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+</RelativeLayout>

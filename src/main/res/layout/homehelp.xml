@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/floting"
+    android:layout_height="480dp">
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:id="@+id/Linear_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/login_logo"
+            android:id="@+id/Help_image"
+            android:layout_centerInParent="true"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_below="@id/Linear_logo"
+        android:id="@+id/Text"
+        android:fontFamily="@font/mulibold"
+        android:text="How Can We Connect You ?"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"/>
+
+
+    <RadioGroup
+        android:layout_margin="10dp"
+        android:layout_below="@id/Text"
+        android:id="@+id/radio"
+        android:outlineAmbientShadowColor="@color/colorWhite"
+        android:outlineSpotShadowColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:fontFamily="@font/mulibold"
+            android:padding="10dp"
+            android:id="@+id/RadioButton1"
+            android:text="    Tires"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:fontFamily="@font/mulibold"
+            android:padding="10dp"
+            android:id="@+id/RadioButton2"
+            android:text="   Lockout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:fontFamily="@font/mulibold"
+            android:padding="10dp"
+            android:id="@+id/RadioButton3"
+            android:text="   Mechanics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:fontFamily="@font/mulibold"
+            android:padding="10dp"
+            android:id="@+id/RadioButton4"
+            android:text="   Electrical/Battery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:fontFamily="@font/mulibold"
+            android:padding="10dp"
+            android:id="@+id/RadioButton5"
+            android:text="   Tow Truck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:fontFamily="@font/mulibold"
+            android:padding="10dp"
+            android:id="@+id/RadioButton6"
+            android:text="   Car Body Work"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!--<RadioButton-->
+            <!--android:text="Tires"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+    </RadioGroup>
+    <Button
+        android:layout_below="@id/radio"
+        android:background="@drawable/shapelogout"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="Submit"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/Button_save"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+</RelativeLayout>

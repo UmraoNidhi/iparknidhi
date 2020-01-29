@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglight"
+    tools:context=".Fragment.AppFeedbackFragment">
+    <LinearLayout
+        android:id="@+id/Linear_image"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:gravity="center"
+            android:src="@drawable/appfeedback"
+            android:id="@+id/TextView"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="130dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/Linear_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/Linear_detail"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+        <EditText
+            android:visibility="gone"
+            android:background="@drawable/shapereport"
+            android:text="Full Name"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:fontFamily="@font/mulilight"
+            android:id="@+id/Text_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/Linear_detail"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="10dp"
+        android:id="@+id/Linear_email"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+        <EditText
+            android:background="@drawable/shapereport"
+            android:text="Email Address"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:fontFamily="@font/mulilight"
+            android:id="@+id/Text_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/Linear_question"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:layout_below="@id/Linear_email"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/mulibold"
+            android:text="How well does the App meet your needs?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:id="@+id/Radio_group"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:weightSum="5"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/Radio1"
+                android:layout_weight="1"
+                android:text="1"
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/Radio2"
+                android:layout_weight="1"
+                android:text="2"
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/Radio3"
+                android:layout_weight="1"
+                android:text="3"
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/Radio4"
+                android:layout_weight="1"
+                android:text="4"
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/Radio5"
+                android:layout_weight="1"
+                android:text="5"
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/mulibold"
+            android:id="@+id/Text_Question"
+            android:text="Do you have any comments on how we can improve the App to better serve you?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/Edit_message"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:hint="Message"
+            android:gravity="left"
+            android:background="@drawable/shapereport"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_height="100dp"/>
+
+        <FrameLayout
+            android:id="@+id/Login_frame"
+            android:layout_below="@id/Linear_question"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/shapelogout">
+            <ImageView
+                android:id="@+id/shine_img1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/button_animation"/>
+
+            <Button
+                android:id="@+id/Submit_AppFeedback"
+                android:background="@drawable/shapelogout"
+                android:text="Submit"
+                android:textColor="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/Progress"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+</RelativeLayout>

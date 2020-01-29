@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/Card_FAQ"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="4dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/Linear_Main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginRight="10dp"
+                android:weightSum="2"
+                android:id="@+id/Linear_FAQ"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+            <TextView
+                android:fontFamily="@font/mulibold"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/Text_question"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.8"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:text="How can we help u ?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/FAQ_open"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:src="@drawable/open_notification"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/FAQ_close"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:src="@drawable/readnotification"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+        </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginTop="-5dp"
+                android:id="@+id/Linear_Text"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:fontFamily="@font/mulilight"
+                    android:id="@+id/Text_answer"
+                    android:text="we want to help u"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

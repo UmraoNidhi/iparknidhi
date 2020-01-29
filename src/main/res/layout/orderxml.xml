@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:id="@+id/Linear_order"
+        android:background="@drawable/shapereport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:text="Order No :"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="4RHFY7FR3"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <android.support.v7.widget.CardView
+        android:layout_below="@id/Linear_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="6dp">
+
+
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:id="@+id/Linear_orderDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/usercar"
+            android:layout_width="50dp"
+            android:padding="5dp"
+            android:layout_height="50dp" />
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.3"
+            android:orientation="vertical"
+            android:id="@+id/Linear_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:fontFamily="@font/mulilight"
+                android:text="Service Name"
+                android:padding="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="Car Type"
+                android:padding="3dp"
+                android:fontFamily="@font/mulilight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="RSA Provider"
+                android:padding="3dp"
+                android:fontFamily="@font/mulilight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="Fuel type"
+                android:padding="3dp"
+                android:fontFamily="@font/mulilight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/Text_Report"
+                android:text="   Report  "
+                android:background="@drawable/shapelogout"
+                android:textStyle="bold"
+                android:padding="3dp"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/Linear_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/Text_service"
+                android:padding="3dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:fontFamily="@font/mulibold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/Text_car"
+                android:padding="3dp"
+                android:text=""
+                android:fontFamily="@font/mulibold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/Text_Provider"
+                android:padding="3dp"
+                android:text=""
+                android:fontFamily="@font/mulibold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/Text_fuel"
+                android:padding="3dp"
+                android:text=""
+                android:fontFamily="@font/mulibold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

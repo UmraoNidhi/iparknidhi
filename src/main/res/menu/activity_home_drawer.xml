@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/btm_home_black"
+            android:title="Home" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/profile_black"
+            android:title="Profile" />
+        <item
+            android:id="@+id/order"
+            android:visible="false"
+            android:icon="@drawable/order"
+            android:title="Order" />
+        <item
+            android:id="@+id/Notification"
+            android:icon="@drawable/notification_black"
+            android:title="Notifications" />
+
+
+        <item android:id="@+id/Follow"
+            android:title="Follow Us"
+            android:icon="@mipmap/ffnew"/>
+
+        <item android:id="@+id/subscription"
+            android:icon="@drawable/subscription"
+            android:title="Subscription"/>
+
+
+
+        <item
+            android:id="@+id/About"
+            android:icon="@mipmap/appcar"
+            android:title="About Us" />
+
+        <item
+            android:id="@+id/Contact"
+            android:icon="@drawable/mobile"
+            android:title="Contact Us" />
+
+        <item android:id="@+id/Feeback"
+            android:icon="@drawable/newterm"
+            android:title=" App Feedback"/>
+
+        <item
+            android:id="@+id/Privacy"
+            android:icon="@drawable/newprivacy"
+            android:title="Privacy Policy" />
+
+        <item
+            android:id="@+id/Terms"
+            android:icon="@drawable/newterm"
+            android:title="@string/terms_conditions" />
+        <item
+            android:id="@+id/Friend"
+            android:icon="@drawable/share"
+            android:title="Share" />
+        <item
+            android:id="@+id/Setting"
+            android:icon="@drawable/faqq"
+            android:title="FAQ" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+
+
+</menu>

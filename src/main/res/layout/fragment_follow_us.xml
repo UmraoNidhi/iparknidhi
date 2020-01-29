@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.FollowUsFragment">
+
+    <ImageView
+        android:id="@+id/Follow_banner"
+        android:src="@drawable/b2"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="160dp" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/Follow_banner"
+        android:weightSum="3"
+        android:id="@+id/Linear_follow"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@color/colorWhite"
+            android:id="@+id/Linear_facebook"
+            android:layout_marginTop="10dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginStart="20dp"
+                android:src="@drawable/facebook1"
+                android:id="@+id/ImageView1"
+                android:layout_width="50dp"
+                android:padding="8dp"
+                android:layout_height="50dp" />
+            <TextView
+                android:layout_marginStart="20dp"
+                android:text="Facebook"
+                android:gravity="left"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:fontFamily="@font/mulibold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/colorWhite"
+            android:id="@+id/Linear_insta"
+            android:layout_marginTop="30dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginStart="20dp"
+                android:src="@drawable/insta1"
+                android:id="@+id/ImageView2"
+                android:padding="8dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <TextView
+                android:layout_marginStart="20dp"
+                android:text="Instagram"
+                android:gravity="left"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:fontFamily="@font/mulibold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/colorWhite"
+            android:id="@+id/Linear_twitter"
+            android:layout_marginTop="30dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:padding="8dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/twitter1"
+                android:id="@+id/ImageView3"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <TextView
+                android:text="Twitter"
+                android:gravity="left"
+                android:textSize="18sp"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/mulibold"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_banner"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/linebanner"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:clickable="true"
+        android:scaleType="fitXY"/>
+
+
+
+</RelativeLayout>

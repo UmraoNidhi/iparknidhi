@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/Relative_Home"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <ImageView
+            android:src="@drawable/placeholder"
+            android:id="@+id/Banner_home"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+        <TextView
+            android:id="@+id/Text_service"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:fontFamily="@font/mulibold"
+            android:text="Tow Truck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/Linear_city"-->
+        <!--android:weightSum="2"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_weight="1"-->
+            <!--android:id="@+id/Card_State"-->
+            <!--android:layout_margin="4dp"-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--app:cardBackgroundColor="@color/colorWhite"-->
+            <!--app:cardCornerRadius="6dp"-->
+            <!--app:cardElevation="2dp">-->
+
+            <!--<Spinner-->
+                <!--android:background="@color/colorWhite"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:padding="2dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:id="@+id/Spinner_state"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+            <!--</Spinner>-->
+        <!--</android.support.v7.widget.CardView>-->
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_weight="1"-->
+            <!--android:id="@+id/Card_City"-->
+            <!--android:layout_margin="4dp"-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--app:cardBackgroundColor="@color/colorWhite"-->
+            <!--app:cardCornerRadius="6dp"-->
+            <!--app:cardElevation="2dp">-->
+
+            <!--<Spinner-->
+                <!--android:background="@color/colorWhite"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:padding="2dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:id="@+id/Spinner_city"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+            <!--</Spinner>-->
+        <!--</android.support.v7.widget.CardView>-->
+    <!--</LinearLayout>-->
+    <android.support.v7.widget.CardView
+        android:layout_below="@id/Relative_Home"
+        android:id="@+id/Card_home"
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="2dp">
+        <LinearLayout
+            android:gravity="center"
+            android:weightSum="2"
+            android:layout_marginRight="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/Linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:layout_weight="1.7"
+                    android:background="@color/colorWhite"
+                    android:layout_margin="10dp"
+                    android:padding="2dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/Spinner_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+                <ImageView
+                    android:id="@+id/Image_filter"
+                    android:layout_gravity="center"
+                    android:src="@drawable/filter"
+                    android:padding="5dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/Card_home"
+        android:id="@+id/Recycler_home"
+        android:layout_margin="2dp"
+        android:layout_width="match_parent"
+        android:layout_above="@id/image_banner"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+    <FrameLayout
+        android:id="@+id/Frame_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.github.ybq.android.spinkit.SpinKitView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.Circle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:SpinKit_Color="@color/colorAccent" />
+    </FrameLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/Linear_Network"
+        android:gravity="center"
+        android:layout_below="@id/Card_carList"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@drawable/sad"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:id="@+id/Text_Message"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:textColor="@color/colorBlack"
+            android:text="Please Check Your Network Connection."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_banner"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/linebanner"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:clickable="true"
+        android:scaleType="fitXY"/>
+
+
+</RelativeLayout>

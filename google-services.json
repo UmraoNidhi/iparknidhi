@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "121662787151",
+    "firebase_url": "https://wemsuser.firebaseio.com",
+    "project_id": "wemsuser",
+    "storage_bucket": "wemsuser.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121662787151:android:0591dd179f266a6920a43a",
+        "android_client_info": {
+          "package_name": "com.wemsuser.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121662787151-fib4134ps7tn1j5t93vnilljfiicd37o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wemsuser.app",
+            "certificate_hash": "4a86ed86ef6b794f6f5affd0e0a25381ac9cbebf"
+          }
+        },
+        {
+          "client_id": "121662787151-tvec6ksl7hu3j0hmkopl48qtai2m36pg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvqgck2lXkHQx3B8c7QI65bj2hmBdc63Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "121662787151-tvec6ksl7hu3j0hmkopl48qtai2m36pg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

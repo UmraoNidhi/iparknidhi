@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/Liner_subscription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/Image_cross"
+            android:layout_gravity="right"
+            android:src="@drawable/circlecross"
+            android:padding="2dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"/>
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_marginTop="-5dp"-->
+            <!--android:id="@+id/Card"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--app:cardElevation="6dp"-->
+            <!--app:cardCornerRadius="6dp"-->
+            <!--app:cardUseCompatPadding="true">-->
+            <LinearLayout
+                android:id="@+id/Linear"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/Text_detail"
+                    android:fontFamily="@font/mulibold"
+                    android:text="@string/Subscription"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/Buy_now"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shapelogout"
+                    android:text="Buy Now"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="20dp"/>
+
+            </LinearLayout>
+
+
+        <!--</android.support.v7.widget.CardView>-->
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

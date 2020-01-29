@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.AllReviewFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/Recycler_review"
+        android:layout_below="@id/Image_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/Text_List"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Recycler_review"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="47dp"
+        android:fontFamily="@font/mulibold"
+        android:gravity="center"
+        android:text="No Review Found"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp" />
+
+
+    <ProgressBar
+        android:id="@+id/Progress_bar"
+        android:visibility="gone"
+        android:layout_above="@id/Login_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

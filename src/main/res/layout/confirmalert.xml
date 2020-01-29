@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/Text_details"
+            android:text=" Vehicle Details"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/Vehicle"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="Vehicle Type -"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/Text_field1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:id="@+id/Text_value1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorSky"/>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/Brand"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="Brand -"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/Text_field2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:id="@+id/Text_value2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/colorSky"/>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/Model"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="Model -"
+                android:visibility="gone"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/Text_field3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:id="@+id/Text_value3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorSky"/>
+        <LinearLayout
+            android:id="@+id/Fuel"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="Fuel Type -"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/Text_field4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:id="@+id/Text_value4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorSky"/>
+        <LinearLayout
+            android:id="@+id/Year"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="Registration Year -"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/Text_field5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:id="@+id/Text_value5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorSky"/>
+
+        <Button
+            android:id="@+id/Button_confirm"
+            android:layout_margin="35dp"
+            android:background="@drawable/shapelogout"
+            android:textColor="@color/colorBlack"
+            android:text="Confirm"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/Card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="6dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="6dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:id="@+id/Linear_scription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/Text_basic"
+                    android:text="Basic"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/mulibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <FrameLayout
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/colorfee"
+                    android:id="@+id/Frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/Image_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp" />
+                </FrameLayout>
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="-80dp"
+                    android:orientation="vertical"
+                    android:id="@+id/Linear_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/Text_title"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/mulibold"
+                        android:textColor="@color/colorBlack"
+                        android:text="Free"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal"
+                        android:id="@+id/Package_detail"
+                        android:weightSum="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/Symbol"
+                                android:layout_weight=".6"
+                                android:visibility="gone"
+                                android:drawableRight="@mipmap/nigeria"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_weight="2.4"
+                                android:id="@+id/Text_price"
+                                android:text="free/"
+                                android:layout_gravity="center"
+                                android:gravity="right"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/Text_month"
+                            android:layout_weight="1"
+                            android:text="000"
+                            android:layout_gravity="center"
+                            android:gravity="left"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            <WebView
+                android:layout_marginTop="40dp"
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+            <FrameLayout
+                android:id="@+id/Login_frame"
+                android:layout_below="@id/Linear_scription"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/shapelogout">
+                <ImageView
+                    android:id="@+id/shine_img1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_animation"/>
+
+                <Button
+                    android:id="@+id/BuyNow"
+                    android:fontFamily="@font/mulibold"
+                    android:layout_below="@id/Linear_scription"
+                    android:layout_width="match_parent"
+                    android:text="Buy Now"
+                    android:background="@drawable/shapelogout"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="30dp"/>
+            </FrameLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
